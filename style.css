@@ -2,6 +2,9 @@ body{
     padding: 0%;
     margin: 0%;
 }
+:root{
+    --col:#4E47FF;
+}
 header{
     background-image: url(img/Hero-bg.png);
     background-position: center;
@@ -23,12 +26,13 @@ header{
     font-size: 65px;
     font-weight: bold;
     text-align: center;
-    font-family: inter;
+    font-family: Raleway;
 }
+
 .Signup_button{
     height: fit-content;
     padding: 5px;
-    background-color: #4E47FF;
+    background-color: var(--col);
     padding: 27px;
     border: 0;
     padding-top: 11px;
@@ -46,7 +50,7 @@ header{
 }
 .focused_button{
     padding: 5px;
-    background-color: #4E47FF;
+     background-color: var(--col);
     padding-left: 25px;
     padding-right: 25px;
     border: 0;
@@ -58,11 +62,12 @@ header{
 }
 .action{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     width: 80%;
     margin: auto;
+    margin-top: 50px;
 }
 #three{
     font-size: 42px;
@@ -78,7 +83,7 @@ header{
     margin: 0%;
 }
 .launch_button{
-    background-color: #4E47FF;
+    background-color: var(--col);
     border: 0;
     padding-top: 11px;
     padding-bottom: 11px;
@@ -93,4 +98,55 @@ header{
 }
 .action > div{
     margin-top: 100px;
+}
+.productive_users{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    margin-top: 150px;
+    padding: 20px;
+}
+.productive_users::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+    height: 100%;    
+    background-color: var(--col);
+    opacity: 10%;  
+    border-radius: 24px;
+    z-index: -1;    
+}
+#six{
+    font-family: raleway;
+    color: black;
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+}
+.numbers{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.num{
+    font-family: inter;
+    font-weight: bold;
+    font-size: 80px;
+    color: var(--col);
+}
+.sts{
+    font-family: inter;
+    font-size: 20px;
+    color: #000000;
+    opacity: 50%;
+}
+.card_temp{
+    background-color: red;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+
 }
