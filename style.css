@@ -199,11 +199,11 @@ header{
     width: 80%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: auto;
     gap: 40px;
     flex-wrap: wrap;
     margin-top: 200px;
-
 }
 #twelve,#thirteen{
     margin: 0%;
@@ -213,10 +213,13 @@ header{
     color: black;
 }
 input{
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
     border: 1px solid #D6DDED;
-    width: 100%;
     border-radius: 6px;
+    width: 400px;
+    text-align: start;
     background-color: transparent;
     margin-bottom: 25px;
     margin-right: 20px;
@@ -226,11 +229,14 @@ input{
     padding-top: 20px;
     padding-bottom: 40px;
     text-decoration: none; 
+    width: 400px;
     margin-top: 6px;
-    width: 500px;
+    max-width: 500px;
+    padding-left: 10px;
     resize: none;
     background-color:transparent;
     border-radius: 6px;
+    color: black;
 
 }
 label{
@@ -239,7 +245,7 @@ label{
 }
 .g_touch_button{
     background-color: var(--col);
-    max-width: 520px;
+    max-width: 415px;
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -256,8 +262,68 @@ button:hover{
     background-color: black;
     color: white;
     cursor: pointer;
+}
+.final_sec{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    width: 100%;
+    min-height: 400px;
+}
+.contacts div a{
+    text-decoration: none;
+    color: #8987A1;
+}
+#fourteen{
+    font-size: 100px;
+    color: var(--col);
+    font-weight: bold;
+    font-family: inter;
+    margin: 0%;
+}
+#fifteen,#sixteen{
+    color: #8987A1;
+    font-size: 16px;
+    margin: 0%;
+    text-align: center;
+}
+.contacts{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 1198px) {
+.info_section{
+    justify-content: center;
+}
+}
+@media screen and (max-width: 544px) {
+input{
+    width: 300px;
+}
+#area{
+    width: 300px;
+}
+.g_touch_button{
+    max-width: 316px;
+    width: 100%;
 
 }
+}
+@media screen and (max-width: 432px) {
+input{
+    width: 180px;
+}
+#area{
+    width: 180px;
+}
+.g_touch_button{
+    max-width: 195px;
+    width: 100%;
 
+}
+}
 
 
